@@ -1,0 +1,21 @@
+/* App.css */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared page layout */
+.page {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1400px; /* widescreen like Letterboxd */
+  padding: 2.5rem 2rem;
+}

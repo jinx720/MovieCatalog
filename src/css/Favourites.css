@@ -1,0 +1,30 @@
+/* Favorites.css */
+
+.favourites-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.favourites-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.favourites-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-soft);
+}
+
+.favourites-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.1rem;
+}
