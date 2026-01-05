@@ -1,4 +1,3 @@
-/* index.css */
 
 * {
   box-sizing: border-box;
@@ -14,17 +13,17 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
 
-  /* Full-page gradient */
+  
   background: linear-gradient(
     135deg,
     #12051f 0%,
     #2a0c4e 45%,
-    #5b2dbf 100%
+    #9A5DBA 100%
   );
   background-attachment: fixed;
 }
 
-/* reusable colors */
+
 :root {
   --gold: #f5c453;
   --gold-soft: #ffd977;
