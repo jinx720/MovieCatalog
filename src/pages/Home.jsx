@@ -59,7 +59,8 @@ function Home(){
       </header>
         {error && <div>error</div>}
       {loading ? <h1>Loading...</h1> : <section className="movies-grid">
-          {movies.map((movie) => (
+          {movies.filter((movie => movie.title.toLowerCase().includes(searchQuery.toLowerCase()))
+              .map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </section>} 
