@@ -40,7 +40,9 @@ function Home(){
             setLoading(false)
         }
     }
-
+      const filteredMovies = movies.filter(movie =>
+    movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+     );
     return (
     <div className="home-page">
       <header className="home-header">
@@ -59,8 +61,7 @@ function Home(){
       </header>
         {error && <div>error</div>}
       {loading ? <h1>Loading...</h1> : <section className="movies-grid">
-          {movies.filter((movie => movie.title.toLowerCase().includes(searchQuery.toLowerCase()))
-              .map((movie) => (
+          {filteredMovies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </section>} 
