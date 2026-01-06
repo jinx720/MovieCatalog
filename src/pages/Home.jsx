@@ -44,10 +44,6 @@ function Home(){
     return (
     <div className="home-page">
       <header className="home-header">
-        
-        <p className="home-subtitle">
-          Search and curate your personal favourites
-        </p>
         <form className="search-form" onSubmit={handle}>
           <input
             className="search-input"
