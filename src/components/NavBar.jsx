@@ -8,7 +8,7 @@ function NavBar() {
       <div className="navbar-inner">
         <div className="navbar-brand">
           <span className="navbar-title">Movie Catalog</span>
-          <span className="navbar-subtitle">Purple &amp; Gold Edition</span>
+          <span className="navbar-subtitle">Save your favourite movies</span>
         </div>
         <div className="navbar-links">
           <Link to="/" className="nav-link">
